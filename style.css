@@ -10,6 +10,10 @@ img{
     display: block;
 }
 
+body section{
+    padding: 60px 60px;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -54,7 +58,6 @@ nav a{
 .intro{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 40px 60px;
     padding-top: 0px;
     align-items: center;
     color: #292828;
@@ -103,18 +106,17 @@ nav a{
 }
 
 .experience{
-    padding: 60px 60px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    background-color: black;
+    background-color: #7d77e4;
 }
 
 .experience-title h2{
     font-size: 8rem;
     font-weight: bolder;
     font-family: 'Poppins', sans-serif;
-    color: rgb(218, 218, 218);
+    color: white;
     word-break: break-all;
     width: 4ch;
     line-height: 1;
@@ -173,17 +175,17 @@ nav a{
 }
 
 .formacao{
-    padding: 40px 60px;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    justify-content: center;
 }
 
 .formacao-title h2{
     font-size: 8rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 40px;
-    color: rgb(65, 65, 65);
+    color: rgb(217, 217, 217);
 }
 
 .formacao-cursos{
@@ -196,7 +198,6 @@ nav a{
     background-color: #9d98ff;
     padding: 20px;
     display: flex;
-    min-width: 250px;
     flex-direction: column;
     gap: 20px;
     border-radius: 8px;
@@ -244,6 +245,266 @@ nav a{
     border-radius: 8px;
     width: 80px;
     text-align: center;
+}
+
+footer{
+    background-color: #131313;
+    color: white;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+footer p, h1, h2{
+    font-family: 'Poppins',sans-serif;
+}
+
+.footer-title{
+    border-bottom: 1px solid #1E1D1D;
+    border-right: 1px solid #1E1D1D;
+    padding: 55px;
+}
+
+.footer-title > h1{
+    font-weight: 400;
+    max-width: 17ch;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.footer-title > h1 > strong{
+    color: #9791F4;
+}
+
+.footer-contact{
+    padding: 55px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    border-bottom: 1px solid #1E1D1D;
+}
+
+.contato{
+    white-space: nowrap;
+}
+
+.contato h2{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.contato:nth-child(1) h2::before{
+    content: url(img/email.svg);
+    margin-right: 8px;
+}
+
+.contato:nth-child(2) h2::before{
+    content: url(img/Phone.svg);
+    margin-right: 8px;
+}
+
+.contato p{
+    font-size: 1.25rem;
+    color: #C9C9C9;
+}
+
+.credits{
+    padding: 2rem 55px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 / 3;
+}
+
+.credits p{
+    font-size: 1.25rem;
+}
+
+.credits strong{
+    font-size: 1.5rem;
+}
+
+.social{
+    display: flex;
+    gap: 50px;
+}
+
+@media (max-width: 900px){
+    .formacao-cursos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formacao-title h2{
+        text-align: center;
+        font-size: 6rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .credits{
+        grid-column: 1 / 2;
+    }
+
+}
+
+@media (max-width: 850px){
+    header{
+        flex-direction: column;
+    }
+    
+    .credits{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .experience{
+        grid-template-columns: 1fr;
+    }
+
+    .experience-title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .experience-title h2{
+        width: auto;
+        font-size: 4rem;
+    }
+
+    .intro-img{
+        display: none;
+    }
+
+    .intro{
+        grid-template-columns: 1fr;
+    }
+
+    .intro-text{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px){
+    .formacao-title h2{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 570px){
+    .intro-text h1{
+        font-size: 2rem;
+    }
+
+    .intro-text p{
+        font-size: 1rem;
+    }
+
+    .intro-text button{
+        width: 150px;
+        font-size: 1rem;
+    }
+
+    .experience-title h2{
+        font-size: 3rem;
+    }
+
+    .curso > .nome{
+        font-size: 1rem; 
+    }   
+    
+    .footer-title{
+        padding: 55px 1rem;
+    }
+    .footer-title h1{
+        font-size: 1.5rem;
+    }
+    .footer-contact{
+        padding: 1rem;
+        gap: 24px;
+    }
+
+    .footer-contact h2{
+        font-size: 1rem;
+    }
+
+    .footer-contact p{
+        font-size: 1rem;
+    }
+
+    .contato h2::before{
+        display: none;
+    }
+
+    .credits{
+        padding: 1rem;
+    }
+
+    .rights p{
+        font-size: 0.75rem;
+    }
+
+    .rights strong{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    body section{
+        padding: 20px 20px;
+    }
+    .logo{
+        font-size: 1.75rem;
+    }
+    
+    header{
+        padding: 20px 20px;
+    }
+    header a{
+        font-size: 1rem;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+    
+    .cards-container{
+        grid-template-columns: 1fr;
+    }
+
+    .experience-title h2{
+        padding: 40px 0px;
+    }
+
+    .formacao-title h2{
+        font-size: 3rem;
+    }
+
+    .formacao-cursos{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 400px){
+    .experience-title h2{
+        font-size: 2.5rem;
+    }
+    .footer-contact{
+        flex-direction: column;
+    }
+
+    .contato{
+        text-align: center;
+    }
 }
 
 

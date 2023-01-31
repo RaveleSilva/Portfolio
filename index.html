@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -13,46 +14,46 @@
         <div class="logo">Ravele Silva</div>
         <nav aria-label="Primária">
             <ul>
-                <li><a href="#">Experiência</a></li>
-                <li><a href="#">Formação</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main aria-label="Conteúdo principal">
 
-        <section class="intro">
+        <section aria-label="Introdução" class="intro">
             <div class="intro-text">
                 <h1><strong>Desenvolvedor</strong> Front-End & UI <strong>Designer.</strong></h1>
                 <p>Localizado no Ceará &#X1F335 - Brazil</p>
                 <button>FALE COMIGO</button>
             </div>
             <div class="intro-img">
-                <img src="img/undraw_laravel_and_vue_-59-tp 1.svg" alt="Programador front-end">
+                <img src="img/undraw_laravel_and_vue_-59-tp 1.svg" alt="Ilustração de um Programador">
             </div>
         </section>
 
-        <section class="experience">
+        <section aria-label="Experiências" id="experience" class="experience">
             <div class="experience-title">
                 <h2>EXPERIÊNCIA</h2>
             </div>
             <div class="cards-container">
                 <div class="card">
-                    <img src="img/WhatsApp Image 2023-01-30 at 15.52.55.jpeg" alt="">
+                    <img src="img/WhatsApp Image 2023-01-30 at 15.52.55.jpeg" alt="Site 1">
                 </div>
                 <div class="card">
-                    <img src="img/WhatsApp Image 2023-01-30 at 15.54.00.jpeg" alt="">
+                    <img src="img/WhatsApp Image 2023-01-30 at 15.54.00.jpeg" alt="Site 2">
                 </div>
                 <div class="card">
-                    <img src="img/WhatsApp Image 2023-01-30 at 15.54.51.jpeg" alt="">
+                    <img src="img/WhatsApp Image 2023-01-30 at 15.54.51.jpeg" alt="Site 3">
                 </div>
                 <div class="card">
-                    <img src="img/WhatsApp Image 2023-01-30 at 15.55.40.jpeg" alt="">
+                    <img src="img/WhatsApp Image 2023-01-30 at 15.55.40.jpeg" alt="Site 4">
                 </div>
             </div>
         </section>
-        <section class="formacao">
+        <section aria-label="Formação" id="formacao" class="formacao">
             <div class="formacao-title">
                 <h2>FORMAÇÃO</h2>
             </div>
@@ -67,7 +68,7 @@
                     <h1 class="nome">Desenvolvimento Front-End e UI Design</h1>
                     <p class="instituicao">Origamid</p>
                 </div>
-                <div class="curso ">
+                <div class="curso">
                     <p class="grau intensivo">Curso</p>
                     <h1 class="nome">HTML5 e CSS3</h1>
                     <p class="instituicao">CursoEmVideo - 160h</p>
@@ -100,16 +101,29 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-text">
-            <p>Atualmente á procura de um estágio. Entre em contato comigo
-            </p>
-            <p class="rights">
-                Ravele. Alguns direitos reservados.
-            </p>
+    <footer aria-label="Contatos" id="contato">
+        <div class="footer-title">
+            <h1>Estou <strong>disponível</strong> para as suas idéias.</h1>
         </div>
-        <div class="footer-contacts">
-
+        <div class="footer-contact">
+            <div class="contato">
+                <h2>Email</h2>
+                <p>ravele.cs@gmail.com</p>
+            </div>
+            <div class="contato">
+                <h2>Telefone</h2>
+                <p>(88) 99443-6711</p>
+            </div>
+        </div>
+        <div class="credits">
+            <div class="rights">
+                <p>Designed and Developed by: <strong>Ravele Silva</strong></p>
+            </div>
+            <div class="social">
+                <img src="img/Whatsapp.svg" alt="">
+                <img src="img/Instagram.svg" alt="">
+                <img src="img/GitHub.svg" alt="">
+            </div>
         </div>
     </footer>
 </body>
