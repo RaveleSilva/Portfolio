@@ -121,6 +121,7 @@ nav a{
     word-break: break-all;
     width: 4ch;
     line-height: 1;
+    margin-bottom: 2rem;
 }
 
 .cards-container{
